@@ -4,7 +4,7 @@ export default function Dashboard() {
   const { data: session } = useSession();
   if (!session) return <p>Loading...</p>;
 
-  // Sample images – put these in /public/images/
+
   const images = [
     "/images/pic1.jpg",
     "/images/pic2.jpg",
@@ -113,3 +113,4 @@ export default function Dashboard() {
     </div>
   );
 }
+
