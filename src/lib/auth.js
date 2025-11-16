@@ -10,7 +10,7 @@ export const authOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        // Find user from "database"
+      
         const user = users.find(
           (u) =>
             u.email === credentials.email && u.password === credentials.password
@@ -26,3 +26,4 @@ export const authOptions = {
   ],
   session: { strategy: "jwt" },
 };
+
