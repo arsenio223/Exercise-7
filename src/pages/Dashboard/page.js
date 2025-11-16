@@ -5,7 +5,7 @@ export default function Dashboard() {
 
   return (
     <div style={{ position: "relative", height: "100vh", width: "100vw" }}>
-      {/* Logout button in top-right corner */}
+  
       <button
         onClick={() => signOut({ callbackUrl: "/login" })}
         style={{
@@ -19,7 +19,6 @@ export default function Dashboard() {
         Logout
       </button>
 
-      {/* Centered content */}
       <div
         style={{
           display: "flex",
@@ -36,3 +35,4 @@ export default function Dashboard() {
     </div>
   );
 }
+
